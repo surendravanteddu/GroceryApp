@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- The first child in the layout is for the main Activity UI-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".AddGrocer"
+        android:background="#ffffffff">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:hint="Enter Grocer Id"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstname"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:hint="Enter First Name"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lastname"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:hint="Enter Last Name"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:hint="Enter Email"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:hint="Enter DOB"
+            android:focusableInTouchMode="false"
+            android:id="@+id/dob"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:hint="Enter Phone"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/address"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:hint="Enter Address"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addGrocer"
+            android:text="Add Grocer"
+            />
+
+
+    </LinearLayout>
+
+    <!-- Side navigation drawer UI -->
+    <ListView
+        android:id="@+id/navList"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|start"
+        android:background="#ffeeeeee"/>
+
+</android.support.v4.widget.DrawerLayout>

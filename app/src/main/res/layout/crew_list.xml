@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/crewId"
+        android:layout_gravity="center"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/role"
+        android:layout_gravity="center"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="TextView" />
+        <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/addToVacationList"
+                android:text="Add to Vacation List"/>
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/deleteCrew"
+                android:text="Delete"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
